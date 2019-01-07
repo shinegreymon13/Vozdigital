@@ -23,6 +23,7 @@ class LoginController extends Controller
       'password' => 'required|string'
     ]);
 
+
     if(Auth::attempt($credentials)){
       $estado = auth()->user()->estado;
       if($estado == 0){
