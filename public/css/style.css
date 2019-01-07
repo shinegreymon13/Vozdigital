@@ -1,0 +1,21 @@
+html{
+  background: transparent
+}
+body{
+  background-color: #D3CCE3;  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card{
+  border: 2px solid  #B47EB6;
+  border-radius: 5px;
+}
+.card-header{
+  background-color: #343A40;
+  color: #fff
+}
+
+#login{
+  margin-top: 35%;
+}

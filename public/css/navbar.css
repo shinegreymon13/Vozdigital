@@ -1,0 +1,35 @@
+a{
+  color: #fff;
+}
+
+a:hover{
+  color: #b7b7b7;
+  text-decoration: none;
+}
+
+.logo{
+  height:25px;
+}
+
+.border-purple{
+  border-bottom: 3px solid #B47EB6;
+}
+
+.btn-primary{
+  background: #B47EB6;
+  border: #C187C3;
+}
+
+.btn-primary:hover{
+  background: #9B6C9C;
+  border: #C187C3;
+  color: #E5E5E5;
+}
+.btn-primary:active{
+  box-shadow: none !important;
+}
+.btn-primary:active:focus {
+  color: #7F7F7F !important;
+  background: #755276 !important;
+  border-color: #E5E5E5 !important;
+}
