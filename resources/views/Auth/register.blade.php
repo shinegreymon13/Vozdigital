@@ -4,7 +4,7 @@
 @section('css')
   <link rel="stylesheet" href="{{asset('css/registrar.css')}}">
 @endsection
-<div class="container pt-4">
+<div class="container my-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div id="registrar" class="card">

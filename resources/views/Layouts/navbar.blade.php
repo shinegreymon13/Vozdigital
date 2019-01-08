@@ -29,7 +29,7 @@
         <a class="btn btn-primary btn-sm my-2 my-sm-0 color-purple" href="{{route('login')}}">Iniciar sesion</a>
       </form>
       <form class="form-inline my-2 my-lg-0" action="index.html" method="post">
-        <a class="btn btn-primary btn-sm my-2 my-sm-0 ml-3 color-purple" href="#">Registrarse</a>
+        <a class="btn btn-primary btn-sm my-2 my-sm-0 ml-3 color-purple" href="{{route('registrar')}}">Registrarse</a>
       </form>
     @endif
   </div>

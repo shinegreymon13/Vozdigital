@@ -2,7 +2,7 @@
 @section('title', ' - Login')
 
 @section('content')
-  <div class="container-fluid mt-4">
+  <div class="container-fluid my-4">
     <div class="row">
       <div class="col-sm-4 col-md-4 col-lg-4 mx-auto">
         <div id="login" class="card">
@@ -24,7 +24,7 @@
                 <label for="password">Contraseña</label>
                 <input class="form-control" type="password" name="password" id="password">
                 {!! $errors->first('password', '<div class="alert alert-danger mt-2">:message</div>')!!}
-                
+
               </div>
               <button class="btn btn-primary btn-block mt-4" type="submit" name="button" id="button">Acceder</button>
             </form>

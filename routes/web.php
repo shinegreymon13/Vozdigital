@@ -14,7 +14,7 @@
 Route::get('/', 'Auth\LoginController@showLoginForm')->middleware('guest');
 
 Route::get('/login', function(){
-    return view('auth.login');
+    return view('Auth.login');
 });
 
 Route::get('registrar', 'Auth\RegisterController@showRegistrationForm')->name('registrar');
