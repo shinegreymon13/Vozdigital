@@ -58,3 +58,5 @@ Tambien puede ejecutar
 ```
 sudo systemctl restart httpd
 ```
+##Enlace Script
+http://www.mediafire.com/file/l1xwuyh373bx3en/script.sh/file
