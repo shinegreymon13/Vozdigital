@@ -17,9 +17,11 @@ Route::get('/login', function(){
     return view('auth.login');
 });
 
-Route::post('login', 'Auth\LoginController@login')->name('login');
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-
+Route::get('registrar', 'Auth\RegisterController@showRegistrationForm')->name('registrar');
 Route::get('home', 'Home\HomeController@index')->name('home');
 Route::get('admin', 'Admin\AdminController@index')->name('admin');
 Route::get('supervisor', 'Supervisor\SupervisorController@index')->name('supervisor');
+
+Route::post('login', 'Auth\LoginController@login')->name('login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('registrar', 'Auth\RegisterController@register');

@@ -35,10 +35,14 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
+     public function __construct()
+     {
+         $this->middleware('guest', ['only' => 'showRegistrationForm']);
+     }
+
+     public function showRegistrationForm(){
+         return view('Auth.register');
+     }
 
     /**
      * Get a validator for an incoming registration request.
@@ -49,9 +53,9 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:6', 'confirmed'],
+          'email' => 'required|string|email|max:255|unique:usuario,email',
+          'rut' => 'required|string|min:9|max:12|unique:usuario,rut_usuario',
+          'password' => 'required|confirmed|min:6',
         ]);
     }
 
@@ -63,10 +67,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+      $User = User::create([
+          'nom_usuario' => $data['nombre'],
+          'apellido_paterno' => $data['apellido_paterno'],
+          'apellido_materno' => $data['apellido_materno'],
+          'rut_usuario' => $data['rut'],
+          'email' => $data['email'],
+          'password' => Hash::make($data['password']),
+          'estado' => '0',
+      ]);
+
+      return $User;
+
     }
 }
