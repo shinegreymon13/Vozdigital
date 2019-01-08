@@ -13,7 +13,7 @@ class LoginController extends Controller
   }
 
   public function showLoginForm(){
-    return view('auth.login');
+    return view('Auth.login');
   }
 
   public function login(){
@@ -22,7 +22,6 @@ class LoginController extends Controller
       'email' => 'email|required|string',
       'password' => 'required|string'
     ]);
-
 
     if(Auth::attempt($credentials)){
       $estado = auth()->user()->estado;

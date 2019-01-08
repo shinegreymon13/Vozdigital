@@ -14,7 +14,7 @@
         $nombreCompleto = auth()->user()->nom_usuario.' '.auth()->user()->apellido_paterno.' '.auth()->user()->apellido_materno;
       @endphp
       <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle color-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{$nombreCompleto}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">

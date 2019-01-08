@@ -13,6 +13,6 @@ class SupervisorController extends Controller
   }
 
   public function index(){
-    return view('supervisor.index');
+    return view('Supervisor.index');
   }
 }
