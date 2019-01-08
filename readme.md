@@ -7,7 +7,7 @@ Agregar lo siguiente en el archivo
 
 ```
 <Directory "/var/www/html/laravel/public">
-Allowoverride All
+ Allowoverride All
 </Directory>
 ```
 
@@ -31,7 +31,7 @@ sudo chmod -R 777 storage/*
 sudo chmod -R 777 bootstrap/*
 sudo chmod -R 777 config/*
 ```
-### Permisos a carpetas y arhcivos necesarios
+### Permisos a carpetas y archivos necesarios
 ```sh
 sudo semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html/vozdigital/storage(/.*)?"
 sudo semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html/vozdigital/bootstrap/cache(/.*)?"
@@ -49,4 +49,12 @@ semanage
 ```
 php artisan config:cache
 php artisan config:clear
+```
+No olvidar resetear httpd
+```
+sudo /sbin/service httpd restart
+```
+Tambien puede ejecutar
+```
+sudo systemctl restart httpd
 ```
