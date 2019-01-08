@@ -23,6 +23,8 @@
               </div>
               <button class="btn btn-primary btn-block mt-4" type="submit" name="button" id="button">Acceder</button>
             </form>
+            <div class="text-center">¿No tiene un usuario? Registrese <a href="#">aquí.</a></div>
+            <div class="text-center">¿No recuerda su contraseña? Haga click <a href="#">aquí.</a></div>
           </div>
         </div>
       </div>

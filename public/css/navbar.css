@@ -1,14 +1,14 @@
-a{
+.color-white{
   color: #fff;
 }
 
-a:hover{
+.color-white:hover{
   color: #b7b7b7;
   text-decoration: none;
 }
 
 .logo{
-  height:25px;
+  height:30px;
 }
 
 .border-purple{
